@@ -1,0 +1,183 @@
+/** PLENTY **/
+
+html body .v-application {
+  --color-structure-0: #ffffff;
+  --color-structure-1: #f3f4f5;
+  --color-structure-2: #e9eaec;
+  --color-structure-3: #dce0e3;
+  --color-structure-4: #d7d8db;
+  --color-structure-5: #c6c7ca;
+  --color-structure-6: #acadb2;
+  --color-structure-7: #95989d;
+  --color-structure-8: #7b7e85;
+  --color-structure-9: #63666e;
+  --color-structure-10: #5b5d66;
+  --color-structure-11: #494c56;
+  --color-structure-12: #2f323a;
+  --color-structure-13: #000000;
+  --height-lg: 40px;
+  --space-lg: 12px;
+  --side-nav-width: 256px;
+  --side-nav-width-collapsed: 40px;
+}
+
+
+/** VUETIFY **/
+
+$toolbar-btn-icon-size: 20px;
+$font-size-root: 15px;
+$input-font-size:13px;
+$dialog-border-radius:0px;
+$card-border-radius:0px;
+$data-table-border-radius:0px;
+/* CHANGE EXISTING */
+
+.v-text-field label
+{
+  font-size:13px;
+}
+
+.v-input__icon--append i {
+  font-size: 19px!important;
+}
+.v-input--switch--inset
+{
+  label
+  {
+    font-size: 13px!important;
+    font-weight: bold;
+  }
+  .v-messages
+  {
+    display:none;
+  }
+}
+.v-toolbar.v-toolbar--dense
+{
+  height:40px!important;
+  > div
+  {
+    height:40px!important;
+  }
+}
+
+/* TREE */
+
+.plenty-treeview
+{
+  .tree-icon.nomini:before
+  {
+    transition: all 0.2s ease-out;
+  }
+  .tree-icon
+  {
+    width:40px;
+    height:40px;
+  }
+  font-size:12px;
+  list-style: none;
+  padding:0!important;
+  ul
+  {
+    list-style: none;
+    display:none;
+  }
+  li.open
+  {
+    > ul
+    {
+      display:block;
+    }
+
+    .tree-icon.nomini:before
+    {
+      -webkit-transform: rotate( -90deg);
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+    }
+
+  }
+
+
+  li
+  {
+    line-height:40px;
+    cursor:pointer;
+    &:hover
+    {
+      > div
+      {
+        background-color:#f3f4f5;
+      }
+    }
+  }
+}
+.border-bottom
+{
+  border-bottom:1px solid #cbcbcb;
+}
+.v-main
+{
+  background-color: #fafafa;
+  color: rgba(0, 0, 0, 0.87);
+}
+.wk-successfull
+{
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 9;
+}
+.w-50
+{
+  width:50%;
+}
+.w-100
+{
+  width:100%;
+}
+.background-modal-content
+{
+  background-color:var(--color-structure-2);
+}
+.empty-data
+{
+  padding:15px;
+  i
+  {
+    color:var(--color-structure-5);
+    font-size:60px!important;
+    margin-bottom:8px;
+  }
+}
+.small.v-card
+{
+  .v-card__title
+  {
+    font-size: 14px !important;
+    height: 42px !important;
+    line-height: 42px;
+    padding: 0 16px;
+    border-bottom:1px solid #cbcbcb;
+  }
+}
+.v-navigation-drawer--mini-variant
+{
+  .tree-icon.nomini,
+  .flex-fill
+  {
+    display:none;
+    justify-content: center;
+  }
+  .toggleButton
+  {
+    text-align:center;
+  }
+}
+.v-toolbar__content{
+  height:37px!important;
+}
+.activeWatcher{
+  color:rgb(36, 179, 224);
+}
+
